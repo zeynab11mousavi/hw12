@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1 id="elemId">Welcome</h1>
+
+    <script>
+        let elemId = document.getElementById('elemId');
+        elemId.addEventListener('click', function(e){
+            elemId.textContent = " ";
+            elemId.textContent = "GoodBye";
+            let print = document.createElement('p');
+            print.textContent = `x is ${e.clientX} and y is ${e.clientY}`;
+            document.body.appendChild(print);
+
+        })
+    </script>
+
+</body>
+</html>
